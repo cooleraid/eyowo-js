@@ -6,9 +6,8 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest",
-    "test-coverage": "jest --coverage",
-    "prepublishOnly": "tsc"
+    "prepublishOnly": "tsc",
+    "preinstall": "tsc"
   },
   "author": "Chidi Williams <chidi@softcom.ng>",
   "license": "ISC",
