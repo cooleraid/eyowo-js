@@ -9,7 +9,7 @@
     "test": "jest",
     "test-coverage": "jest --coverage",
     "prepublishOnly": "tsc",
-    "install": "npm install && tsc"
+    "preinstall": "npm install && tsc"
   },
   "author": "Chidi Williams <chidi@softcom.ng>",
   "license": "ISC",
