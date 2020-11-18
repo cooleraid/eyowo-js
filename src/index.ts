@@ -78,11 +78,12 @@ export class Client {
   public async transferToPhone({
     accessToken,
     amount,
+    sendSms = true,
     mobile,
   }: ITransferToPhoneReq) {
     return this.__makeRequest({
       accessToken,
-      messageData: { mobile, amount },
+      messageData: { mobile, amount, sendSms },
       url: '/v1/users/transfers/phone',
     });
   }
@@ -175,6 +176,7 @@ interface IGetUserBalanceReq {
 interface ITransferToPhoneReq {
   mobile: string;
   amount: number;
+  sendSms: boolean;
   accessToken: string;
 }
 
