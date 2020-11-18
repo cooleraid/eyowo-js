@@ -5,12 +5,11 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "postinstall": "npm install",
     "build": "tsc",
     "test": "jest",
     "test-coverage": "jest --coverage",
     "prepublishOnly": "tsc",
-    "preinstall": "tsc"
+    "install": "npm install && tsc"
   },
   "author": "Chidi Williams <chidi@softcom.ng>",
   "license": "ISC",
